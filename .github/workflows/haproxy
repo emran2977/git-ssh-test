@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: SSH into EC2 and Install HAProxy
+      - name:  Install HAProxy
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2 }}
